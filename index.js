@@ -8,6 +8,7 @@ const searchBtn = document.getElementById("search-btn");
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   fetchMovieResults();
+  searchInput.value = ""
 });
 
 async function fetchMovieResults() {
